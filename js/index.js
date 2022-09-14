@@ -46,7 +46,7 @@ function listCart() {
     val.innerText = 'R$' + total.toFixed(2).toString().replace('.', ',')
 }
 
-
+//lllllll
 function addClick(event) {
     //Recebe o índice do produto selecionado
     let index = (event.target.parentNode.parentNode.id)
