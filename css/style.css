@@ -1,0 +1,271 @@
+body {
+    font-family: poppins, sans-serif;
+    background-color: white;
+}
+
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ecf0f8;
+    box-shadow: 0 0 5px #000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-weight: 800;
+    transition: 0.5s ease;
+    white-space: nowrap;
+    
+}
+
+header .logo:hover {
+    transform: scale(1.09);
+}
+
+header .logo a {
+    display: block;
+    line-height: 100px;
+    padding-left: 100px;
+    font-size: 28px;
+    color: rgb(39, 36, 36);
+    text-decoration: none;
+}
+
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+header ul li a {
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(2, 0, 0);
+    transition: 0.5s ease;
+}
+
+header ul li a:hover {
+    color: #2d47da;
+}
+
+main .container {
+    margin-top: 20px;
+    display: flex;
+}
+
+main .cards {
+    width: 80%;
+}
+
+main .cards li {
+    width: 280px;
+    margin: 18px;
+    display: inline-block;
+    background-size: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px 0 rgba(18, 22, 87, 0.37) ;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    transition: 0.3s;
+}
+
+main .cards li:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 5px #2d47da;
+}
+img{
+    width: 60%;
+    height: 140px;
+    margin-left: 23%;
+    object-fit: contain;
+}
+
+
+main .cards li figure {
+    width: 100%;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
+}
+
+main .cards li figure div{
+    text-align: center;
+    width: 100px;
+    color: rgb(247, 247, 247);
+    background-color: #2d47da;
+}
+
+main .cards li section {
+    height: 184px;
+    margin: 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+main .cards li section h1 {
+    color: rgb(10, 9, 9);
+    font-size: 24px;
+}
+
+main .cards li section .desc {
+    text-align: center;
+    color: rgb(15, 15, 15);
+    font-size: 12px;
+}
+
+main .cards li section .price {
+    color: rgb(12, 11, 11);
+    font-weight: 600;
+}
+
+main .cards li section button {
+    cursor: pointer;
+    border: transparent;
+    color: rgb(8, 8, 8);
+    background-color: transparent;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+main .cards li section button:hover {
+    color: #2d47da;
+}
+
+main aside {
+    width: 240px;
+}
+
+main aside .search {
+    margin-top: 18px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+main aside .search input {
+    outline: none;
+    height: 10px;
+    width: 203px;
+    padding: 12px 4px;
+    border-radius: 5px;
+}
+
+main aside .search button {
+    cursor: pointer;
+    border: transparent;
+    padding: 10px 10px 11px 10px;
+    margin-left: -6px;
+    background-color: #070707;
+    color: rgb(255, 255, 255);
+    border-radius: 0px 5px 5px 0px;
+}
+
+main aside h1 {
+    font-size: 18px;
+    color: rgb(10, 9, 9);
+    margin: 20px 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+main aside ul.cart::-webkit-scrollbar {
+    width: 11px;
+}
+
+main aside ul.cart {
+    height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+main aside ul.cart::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+    border-radius: 6px;
+}
+
+main aside ul.cart::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+
+main aside .cart li {
+    width: 220px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: #ecf0f8;
+    color: #000;
+}
+
+main aside .cart li figure { 
+    display: flex;
+    align-items: center;
+    width: 90px;    
+}
+
+main aside .cart li figure img {
+    width: 20px;
+    height: 20px;
+
+    
+}
+
+main aside .cart li section{
+    width: 120px;
+}
+
+main aside .cart li section h2,
+p {
+    color: black;
+}
+
+main aside .cart li section button {
+    cursor: pointer;
+    border: transparent;
+    color: red;
+    background-color: transparent;
+}
+
+main aside .total {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a0a0a;    
+    border-radius: 6px;
+}
+
+main aside .total p {
+    padding: 10px;
+    color: white;
+    line-height: 20px;
+}
+
+main aside .total .valor {    
+    text-align: right;
+}
