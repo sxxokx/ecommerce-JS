@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+    <title>Pro Player</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">PRO PLAYER</a>
+            </div>
+            <ul class="tagMenu">
+                <li><a>TODOS OS PRODUTOS</a></li>
+                <li><a>HARDWARE</a></li>
+                <li><a>PERIFÉRICOS</a></li>
+                <li><a>NOTEBOOKS</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <ul class="cards">
+               <!-- <li id="#0">
+                    <figure>
+                        <input class="categor" type="button" value="Hardware">
+                        <img src="./img/gtx asus 1650.jpg" alt="Gtx 1650">
+                    </figure>
+                    <section>
+                        <h1>Gtx 1650</h1>
+                        <p class="desc">Placa de video de ótimo desempenho...</p>
+                        <p class="price">R$529,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#1">
+                    <figure>
+                        <input type="button" value="Hardware">
+                        <img src="./img/ram asgard.webp" alt="Ram DDR4">
+                    </figure>
+                    <section>
+                        <h1>Ram DDR4</h1>
+                        <p class="desc">Cada memoria com 8gb e 3200 Mhz...</p>
+                        <p class="price">R$174,89</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#2">
+                    <figure>
+                        <input type="button" value="Periféricos">
+                        <img src="./img/tecado infernal.webp" alt="Teclado Mecânico">
+                    </figure>
+                    <section>
+                        <h1>Infernal Dragon</h1>
+                        <p class="desc">Teclado Viserion, swith opitco...</p>
+                        <p class="price">R$269,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#3">
+                    <figure>
+                        <input type="button" value="Periféricos">
+                        <img src="./img/mouse ryu.webp" alt="Infernal Dragon Ryu">
+                    </figure>
+                    <section>
+                        <h1Infernal Dragon Ryu</h1>
+                        <p class="desc">Mouse de Exelente desempenho...</p>
+                        <p class="price">R$149,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+                 
+                <li id="#4">
+                    <figure>
+                        <input type="button" value="Notebooks">
+                        <img src="./img/lenovo-legion-y540.webp" alt="Legion y540">
+                    </figure>
+                    <section>
+                        <h1>Legion y540</h1>
+                        <p class="desc">Notebook de alto desempenho...</p>
+                        <p class="price">R$930,29</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>
+
+                <li id="#5">
+                    <figure>
+                        <input type="button" value="Notebooks">
+                        <img src="./img/acer nitro.webp" alt="Acer Nitro 5">
+                    </figure>
+                    <section>
+                        <h1>Acer Nitro 5</h1>
+                        <p class="desc">Notebook de alto desempenho...</p>
+                        <p class="price">R$989,89</p>
+                        <button>Adicionar ao carrinho</button>
+                    </section>
+                </li>-->
+            </ul>
+
+            <aside>
+                <div class="search">
+                    <input type="text" placeholder="Procure seu Produto" id="searchbox">
+                    <button class="fa fa-search" onclick="searchClick()"></button>
+                </div>
+                <section>
+                    <h1>CARRINHO DE COMPRAS</h1>
+                    <ul class="cart">
+                    <!--
+                        <li>
+                            <figure>
+                                <img src="./img/acer nitro.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>Acer Nitro 5</h2>
+                                <p class="price">R$989,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/acer nitro.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>Acer Nitro 5</h2>
+                                <p class="price">R$989,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/acer nitro.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>Acer Nitro 5</h2>
+                                <p class="price">R$989,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="./img/acer nitro.webp" alt="">
+                            </figure>
+                            <section>
+                                <h2>Acer Nitro 5</h2>
+                                <p class="price">R$989,89</p>
+                                <button>Remover Produto</button>
+                            </section>
+                        </li>
+                        -->
+                    </ul>
+                    <div class="total">
+                        <div class="texto">
+                            <p>Quantidade:</p>
+                            <p>Total:</p>
+                        </div>
+                        <div class="valor">
+                            <p id="qtd">0</p>
+                            <p id="val">R$0,00</p>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
